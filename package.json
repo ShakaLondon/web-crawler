@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev --prefix web-crawler\" \"npm run dev --prefix web-crawler-frontend\"",
+    "test": "concurrently -n backend,frontend -c blue,green --kill-others-on-fail \"npm run test --prefix web-crawler\" \"npm run test --prefix web-crawler-frontend\"",
+    "test:run": "npm run test:run --prefix web-crawler && npm run test:run --prefix web-crawler-frontend",
+    "install:all": "npm install && npm install --prefix web-crawler && npm install --prefix web-crawler-frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

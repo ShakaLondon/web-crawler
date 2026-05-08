@@ -1,0 +1,29 @@
+:root {
+  --full-width: 100%;
+  --space-one: 1px;
+  --space-xs: 6px;
+  --space-sm: 10px;
+  --space-md: 14px;
+  --space-lg: 20px;
+  --space-xl: 40px;
+
+  --margin-sm: 10%;
+  --margin-md: 20%;
+  --margin-lg: 40%;
+
+  --size-xs: 12px;
+  --size-sm: 14px;
+  --size-md: 16px;
+  --size-lg: 24px;
+  --size-xl: 40px;
+}
+
+body {
+  font-family: "Manrope", system-ui, sans-serif;
+}
+
+p {
+  height: auto;
+  margin-block: unset;
+  font-size: var(--size-sm);
+}

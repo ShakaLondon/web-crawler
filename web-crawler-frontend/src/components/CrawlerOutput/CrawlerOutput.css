@@ -1,0 +1,48 @@
+.crawler-result {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: var(--space-md, --space-md);
+  row-gap: var(--space-sm, --space-sm);
+  margin-bottom: var(--space-lg, --space-lg);
+  grid-template-areas:
+    "visited visited-link"
+    "found found-link";
+}
+
+.crawler-result-visited {
+  font-weight: 800;
+  grid-area: visited;
+  align-content: center;
+}
+
+.crawler-result-visited-link {
+  grid-area: visited-link;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.crawler-result-found {
+  grid-area: found;
+  font-weight: 600;
+  font-size: var(--size-sm);
+}
+
+.crawler-result-found-links {
+  grid-area: found-link;
+  min-width: 0;
+  font-size: var(--size-xs);
+}
+
+.crawler-result-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-sm, --size-sm);
+}
+
+.truncate {
+  display: block;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
